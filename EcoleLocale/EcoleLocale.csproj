@@ -65,8 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dao\implementations\CoursRepository.cs" />
-    <Compile Include="dao\interfaces\ICoursRepository.cs" />
+    <Compile Include="controllers\CoursController.cs" />
+    <Compile Include="dao\GenericRepository.cs" />
+    <Compile Include="dao\UnitOfWork.cs" />
     <Compile Include="dto\cours.cs" />
     <Compile Include="DbModele.cs" />
     <Compile Include="dto\disponibilite.cs" />
@@ -104,7 +105,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="dao\implementations\" />
+    <Folder Include="dao\interfaces\" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
